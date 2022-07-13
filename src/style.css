@@ -1,0 +1,169 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    background: #5e6380;
+}
+
+body {
+    margin: 10px;
+    background-color: #101533;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #2b3151;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 10px 0% 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .pokeball-logo {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+header .title {
+    align-items: center;
+}
+
+main {
+    background-color: #4a5074;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+}
+
+main .poke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .poke .poke-name {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .poke .poke-name::before {
+    background-image: url("../img/fire.svg");
+    background-repeat: no-repeat;
+    background-size: auto 25px;
+    display: inline-block;
+    width: 20px; 
+    height: 25px;
+    content:"";
+}
+
+main .poke .main-poke .poke-image {
+    width: auto;
+    max-height: 15em;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+main .poke-info {
+    background-color: #2b3151;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+main .poke-info .detail {
+    width: calc(100% / 2 - 30px);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+
+main .poke-info .detail:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+    height: 70px;
+}
+
+footer .others {
+    font-size: 1.2em;
+    width: 10%;
+}
+
+footer .other-pokes {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+}
+
+footer .other-pokes .other-poke {
+    background-color: rgba(68, 61, 94, 0.5);
+    width: 4em;
+    height: 4em;
+    border-radius: 10px;
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .other-pokes .other-poke:hover {
+    border-radius: 10% 25%;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: rgba(51, 43, 80, 0.726);
+    border: solid 1px white;
+    cursor: cell;
+}
+
+footer .other-pokes .poke1 {
+    text-align: center;
+    background-image: url("../img/poke1.png");
+}
+
+footer .other-pokes .poke2 {
+    background-image: url("../img/poke2.png");
+}
+
+footer .other-pokes .poke3 {
+    background-image: url("../img/poke3.png");
+}
+
+footer .other-pokes .poke4 {
+    background-image: url("../img/poke4.png");
+}
