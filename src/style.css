@@ -3,7 +3,8 @@
 }
 
 html {
-    background: #5e6380;
+    background: linear-gradient(#9198e5 70%, #e66465);
+    height: 100%;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #2b3151;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: row;
@@ -39,7 +40,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px 20px 50px 20px;
 }
 
@@ -77,21 +78,28 @@ main .poke .poke-name::before {
     content:"";
 }
 
+main .poke .main-poke {
+    text-align: center;
+}
+
 main .poke .main-poke .poke-image {
     width: auto;
     max-height: 15em;
+    position: relative;
+    z-index: 1;
     /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 main .poke-info {
-    background-color: #2b3151;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     width: 30%;
+    height: 40vh;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -117,19 +125,20 @@ footer {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 0px 0px 10px 10px;
-    height: 70px;
+    column-gap: 3em;
 }
 
 footer .others {
     font-size: 1.2em;
-    width: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer .other-pokes {
     display: flex;
     flex-direction: row;
-    width: 40%;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 2em;
 }
 
 footer .other-pokes .other-poke {
@@ -140,19 +149,25 @@ footer .other-pokes .other-poke {
     background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: center;
+    border: solid 1px transparent;
+}
+
+footer .other-pokes .other-pokes-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
 }
 
 footer .other-pokes .other-poke:hover {
     border-radius: 10% 25%;
-    width: 4.5em;
-    height: 4.5em;
+    /* width: 4.5em;
+    height: 4.5em; */
     background-color: rgba(51, 43, 80, 0.726);
-    border: solid 1px white;
+    border-color: white;
     cursor: cell;
 }
 
 footer .other-pokes .poke1 {
-    text-align: center;
     background-image: url("../img/poke1.png");
 }
 
@@ -166,4 +181,60 @@ footer .other-pokes .poke3 {
 
 footer .other-pokes .poke4 {
     background-image: url("../img/poke4.png");
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        background: linear-gradient(#9198e5, #e66465);
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .poke {
+        width: 80%;
+    }
+
+    main .poke .main-poke .poke-image {
+        text-align: center;
+        width: 100%;
+    }
+
+    main .poke-info {
+        margin-top: -40px;
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .others {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer .other-pokes {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    footer .other-pokes .other-pokes-row {
+        justify-content: center;
+        column-gap: 2em;
+    }
+
+    
 }
