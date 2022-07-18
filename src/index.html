@@ -1,73 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/pokedex-logo.png">
     <title>Pokedex</title>
 </head>
 
-<body>
-    <header>
-        <img class="pokeball-logo" src="../img/pokeball.png" alt="pokeball">
-        <span class="title">
+<body class="body">
+    <header class="header">
+        <figure class="header__figure">
+            <img class="header__img" src="../img/pokeball.png" alt="pokeball logo">
+        </figure>
+        <h1 class="header__title">
             POKEDEX_
-        </span>
+        </h1>
     </header>
 
-    <main>
-        <section class="poke">
-            <div class="poke-name">
+    <main class="main__section">
+        <section class="poke__section">
+            <span class="poke-name">
                 CHARIZARD
-            </div>
-            <div class="main-poke">
-                <img class="poke-image" src="../img/charizard.png" alt="poke image">
-            </div>
+            </span>
+            <figure class="main-poke__figure">
+                <img class="main-poke__img" src="../img/charizard.png" alt="Main pokemon image">
+            </figre>
         </section>
-        <section class="poke-info">
-            <article class="detail">
-                <span>NO.</span>
-                <span>006</span>
+        <section class="poke-info__section">
+            <article class="info-detail">
+                <span class="info-tag info-tag--characterist">NO.</span>
+                <span class="info-tag info-value">006</span>
             </article>
-            <article class="detail">
-                <span>LEVEL</span>
-                <span>100</span>
+            <article class="info-detail">
+                <span class="info-tag info-tag--characterist">LEVEL</span>
+                <span class="info-tag info-value">100</span>
             </article>
-            <article class="detail">
-                <span>TYPE</span>
-                <span>FIRE</span>
+            <article class="info-detail">
+                <span class="info-tag info-tag--characterist">TYPE</span>
+                <span class="info-tag info-value">FIRE</span>
             </article>
-            <article class="detail">
-                <span>HABILITY</span>
-                <span>FLAMES</span>
+            <article class="info-detail">
+                <span class="info-tag info-tag--characterist">HABILITY</span>
+                <span class="info-tag info-value">FLAMES</span>
             </article>
-            <article class="detail">
-                <span>HEIGHT</span>
-                <span>1.7 m</span>
+            <article class="info-detail">
+                <span class="info-tag info-tag--characterist">HEIGHT</span>
+                <span class="info-tag info-value">1.7 m</span>
             </article>
-            <article class="detail">
-                <span>WEIGHT</span>
-                <span>90.5 Kg</span>
+            <article class="info-detail">
+                <span class="info-tag info-tag--characterist">WEIGHT</span>
+                <span class="info-tag info-value">90.5 Kg</span>
             </article>
         </section>
     </main>
 
-    <footer>
-        <span class="others">
+    <footer class="footer">
+        <h2 class="others">
             OTHERS
-        </span>
-        <div class="other-pokes">
-            <div class="other-pokes-row">
-                <div class="other-poke poke1"></div>
-                <div class="other-poke poke2"></div>
-            </div>
-            <div class="other-pokes-row">
-                <div class="other-poke poke3"></div>
-                <div class="other-poke poke4"></div>
-            </div>
-        </div>
+        </h2>
+        <article class="other-pokes">
+            <section class="other-pokes-row">
+                <div class="other-poke other-poke-poke1"></div>
+                <div class="other-poke other-poke-poke2"></div>
+            </section>
+            <section class="other-pokes-row">
+                <div class="other-poke other-poke-poke3"></div>
+                <div class="other-poke other-poke-poke4"></div>
+            </section>
+        </article>
     </footer>
     <script src="script.js"></script>
 </body>
