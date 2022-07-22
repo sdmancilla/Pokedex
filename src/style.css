@@ -6,12 +6,14 @@
 .html {
     background: linear-gradient(#9198e5 70%, #e66465);
     min-width: 300px;
+    height: 100%;
 }
 
 .body {
     margin: 10px;
     background-color: #101533;
     border-radius: 10px;
+    max-width: 1020px;
 }
 
 /* HEADER */
@@ -224,11 +226,21 @@
     }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 770px) {
+    .html {
+        padding: 10px;
+    }
+
+    .body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .main__section {
         flex-direction: row;
         padding: 2% 10%;
         justify-content: center;
+        align-items: flex-start;
     }
 
     .poke__section {
@@ -237,7 +249,7 @@
 
     .poke-info__section {
         margin-top: 0px;
-        height: 60vh;
+        height: 40vh;
         padding: 40px 0px;
         row-gap: 60px;
     }
